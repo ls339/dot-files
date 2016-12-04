@@ -25,19 +25,9 @@ export PYTHONPATH="/opt/datadog-agent/agent:/opt/datadog-agent/agent/checks/libs
 
 ulimit -S -n 1024
 
-# Prompts
-#PS1='\h:\W \u\$ '
-#PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] \[\e[1;37m\]'
-#PS1='\[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] \[\e[1;37m\]'
-
-# The incredible Hulk prompt theme
-#PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;35m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] '
-
-# Green and Blue
-##PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] '
-
-# git
+# git prompt
 PS1='\[\e[1;34m\]\w\[\e[m\] $(__git_ps1 "(%s)")\$ '
+#PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]$(__git_ps1 "(%s)")$\[\e[m\] '
 #PS1='\w$(__git_ps1 " (%s)")\$ '
 
 # Make bash check its window size after a process completes
